@@ -1,0 +1,24 @@
+Algorithm  ex1
+ x: array of :integer[50]; 
+ k,sum,i:integer;
+ BEGIN 
+ For i from 0 to x.length step1 do{
+ k=0; 
+  while (k<y.length)do
+  IF(x[i]==y[k]) THEN
+  x[i]:=0;
+  y[k]:=0;
+  k++;
+  END_IF
+  End-while
+}
+ sum=0;
+ For i from 0 to x.length-1 step 1 do{
+    sum+=x[i];
+ } 
+ END_FOR
+ For i from 0 to y.length step 1 do{
+    sum+=y[i];
+ }
+ END_FOR
+ END

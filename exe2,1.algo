@@ -1,0 +1,15 @@
+ALGORITHM ex2paartie1
+ Var i,sum,k:Integer;
+ x : array of Integer[20];
+ y: array of Integer[20];
+ sum=0;
+ For i from 0 to x.length-1step 1 do
+    k=0;
+    while(k<=y.length) do 
+    IF(x[i]==y[k])THEN
+    sum+=x[i]+y[k];
+    k=k+1;
+    END_IF
+    End_while
+ END_FOR
+ END 
